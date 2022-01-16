@@ -1,7 +1,16 @@
 {
-  "radio": [{
-    "name": "Hits 94",
-    "img": "",
-    "stream":""
-  }]
+  "radio": [
+    {
+      "name": "Hits 94",
+      "img": "https://cdn-radiotime-logos.tunein.com/s142771q.png",
+      "stream": "http://streaming.live365.com/b14981_128mp3",
+      "id": "94"
+    },
+    {
+      "name": "test",
+      "img": "https://cdn-radiotime-logos.tunein.com/s142771q.png",
+      "stream": "",
+      "id": "1"
+    }
+  ]
 }

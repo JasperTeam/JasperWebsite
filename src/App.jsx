@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 import Home from './routes/Home';
 import Dashboard from './routes/App';
-  
+import Player from './routes/Player';
+
 function App() {
   const [isLoading, setLoading] = useState(true);
 
@@ -35,7 +36,8 @@ function App() {
     <Router>
      <Routes>
       <Route path="/" exact element={<Home/>}/>
-      <Route path="/app" element={<Dashboard/>}/>    
+      <Route path="/app" element={<Dashboard/>}/>
+      <Route path="/app/player/:id" element={<Player/>}/>
      </Routes>
     </Router>
     </>

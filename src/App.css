@@ -50,3 +50,51 @@ img#icons {
   text-decoration: none;
   border-radius: 20px;
 }
+div.radios {
+  overflow-y: auto;
+  width: 100%;
+}
+#radio {
+  border-radius: 10px;
+
+}
+
+.container {
+  position: relative;
+  height:100px;
+  width:100px;
+}
+
+#radio {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:100px;
+  border-radius:10px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #13181a;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
