@@ -1,0 +1,52 @@
+div#nav {
+  position: fixed;
+  padding:10px;
+}
+
+img#icons {
+  padding: 10px;
+}
+
+.home {
+  width: 100%;
+
+  background: #b81898;
+
+  height: 53em;
+}
+.center {
+  overflow-x: hidden;
+  text-align: center;
+  
+  flex-direction: column;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+#learn-more {
+  height: 50vh;
+}
+
+@media screen and (min-width: 480px) {
+  #learn-more {
+    width: 100%;
+
+    height: 30vh;
+  }
+}
+
+.button {
+  padding: 10px;
+
+  border: 7px #d91c74 solid;
+
+  background: #d91c74;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
