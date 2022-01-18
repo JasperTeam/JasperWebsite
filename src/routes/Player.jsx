@@ -1,39 +1,28 @@
 import React from 'react';
 import '../App.css';
-import {Link,useParams} from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import * as data from './json/radios.json';
 import FA from 'react-fontawesome';
- class Player extends React.Component  {
-   constructor(props) {
-     super(props)
-     const {id} = useParams();
-     this.id = id
-     this.data = data
-   }
 
-   render() {
-      return(
+function Player() {
+  const { id } = useParams()
+  return (
     <>
-    <br/>
-    <br/>
-    <br/>
-    <div className="radios">
-     <div className="container">
-    {this.data.radio.filter((r) => r.id === id).map((r, i) => {
-       return(<>
-       <Link to={"/app/player/" + r.id}>
-       <img id="radio" src={r.img} width="100"/>
-       <div class="overlay"><div class="text">
-        <FA name="play" />
-       </div></div>
-       </Link>
-       </>)
-     })}
-      </div>
-     </div>
+      <br />
+      <br />
+      <br />
+      {data.radio.filter(r => id === r.id).map((r, i) => {
+        return (
+          <>
+          <div className="center" style={{height:"55em"}}>
+            <audio className="audio-element" controls autoPlay>
+              <source src={r.stream}></source>
+            </audio>
+            </div>
+          </>
+        )
+      })}
     </>
-   )
-  }
+  )
 }
-
-export default Player
+export default Player;

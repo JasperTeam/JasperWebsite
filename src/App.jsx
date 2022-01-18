@@ -37,7 +37,7 @@ function App() {
      <Switch>
       <Route path="/" exact element={<Home/>}/>
       <Route path="/app" element={<Dashboard/>}/>
-      <Route path="/app/player/:id" element={<Player/>}/>
+      <Route path="/player/:id" element={<Player/>}/>
      </Switch>
     </Router>
     </>

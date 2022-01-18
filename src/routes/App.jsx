@@ -21,7 +21,7 @@ import axios from 'axios'
     <div className="radios">
      {this.data.radio.map((r, i) => {
        return(<>
-       <Link to={"/app/player/" + r.id}>
+       <Link to={"/player/" + r.id}>
        <img id="radio" src={r.img} width="100"/>
        </Link>
        </>)
