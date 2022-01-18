@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './lib/Navbar';
 import {
   BrowserRouter as Router,
-  Routes,
+  Routes as Switch,
   Route
 } from "react-router-dom";
 import Home from './routes/Home';
@@ -34,11 +34,11 @@ function App() {
     <>
     <Nav/>
     <Router>
-     <Routes>
+     <Switch>
       <Route path="/" exact element={<Home/>}/>
       <Route path="/app" element={<Dashboard/>}/>
       <Route path="/app/player/:id" element={<Player/>}/>
-     </Routes>
+     </Switch>
     </Router>
     </>
   );

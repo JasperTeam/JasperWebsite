@@ -3,26 +3,23 @@ import '../App.css';
 import {Link,useParams} from 'react-router-dom'
 import * as data from './json/radios.json';
 import FA from 'react-fontawesome';
-
  class Player extends React.Component  {
    constructor(props) {
      super(props)
-  
-     this.data = data
      const {id} = useParams();
-     this.id = id;
+     this.id = id
+     this.data = data
    }
 
    render() {
-  return(
+      return(
     <>
     <br/>
     <br/>
     <br/>
     <div className="radios">
      <div className="container">
-     {this.data.radio.map((r, i) => {
-       if(this.id === r.id) {
+    {this.data.radio.filter((r) => r.id === id).map((r, i) => {
        return(<>
        <Link to={"/app/player/" + r.id}>
        <img id="radio" src={r.img} width="100"/>
@@ -31,7 +28,6 @@ import FA from 'react-fontawesome';
        </div></div>
        </Link>
        </>)
-       }
      })}
       </div>
      </div>
@@ -40,4 +36,4 @@ import FA from 'react-fontawesome';
   }
 }
 
-export default Player;
+export default Player

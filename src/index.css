@@ -9,5 +9,6 @@ html {
 body {
   background: #202233;
   color: white;
+  cursor: url('/src/lib/cursor.cur'), default;
   font-family: 'Poppins', sans-serif;
 }
