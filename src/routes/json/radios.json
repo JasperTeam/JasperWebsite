@@ -5,12 +5,6 @@
       "img": "https://cdn-radiotime-logos.tunein.com/s142771q.png",
       "stream": "http://streaming.live365.com/b14981_128mp3",
       "id": "94"
-    },
-    {
-      "name": "test",
-      "img": "https://cdn.discordapp.com/icons/861313067291115541/a_96cfdb0cb6985a1ad8c82820ace431f0.gif?size=2048",
-      "stream": "",
-      "id": "1"
     }
   ]
 }

@@ -15,6 +15,8 @@ function Player() {
         return (
           <>
           <div className="center" style={{height:"55em"}}>
+           <img src={r.img} width="200"/>
+           <p>{r.name}</p>
             <audio className="audio-element" controls autoPlay>
               <source src={r.stream}></source>
             </audio>

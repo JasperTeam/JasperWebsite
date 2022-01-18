@@ -1,6 +1,3 @@
-button, a {
-  
-}
 
 div#nav {
   position: fixed;
@@ -15,8 +12,6 @@ img#icons {
   width: 100%;
 
   background: #b81898;
-
-  height: 55em;
 }
 .center {
   overflow-x: hidden;
@@ -25,7 +20,7 @@ img#icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  height: 55em;
 }
 
 #learn-more {
