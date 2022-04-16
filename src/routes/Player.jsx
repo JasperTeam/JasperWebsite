@@ -14,10 +14,11 @@ function Player() {
       {data.radio.filter(r => id === r.id).map((r, i) => {
         return (
           <>
-          <div className="center" style={{height:"55em"}}>
-           <img src={r.img} width="200"/>
-           <p>{r.name}</p>
-            <audio className="audio-element" controls autoPlay>
+          <div className="center" style={{height:"80vh"}}>
+           <img src={r.img} style={{}} id="radio" width="200"/>
+						<br></br>
+           <h3>{r.name}</h3>
+            <audio className="audio-element" autoPlay>
               <source src={r.stream}></source>
             </audio>
             </div>

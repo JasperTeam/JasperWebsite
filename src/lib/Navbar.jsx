@@ -1,13 +1,19 @@
 import React from 'react';
 import '../App.css';
 import icon2 from '../src/icons/2.svg';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
 
 function Nav() {
-  return (
-    <div id="nav">
-     <img src={icon2} width="60"/>
-    </div>
-  );
+	const history=useNavigate();
+	const locate = (props) => {history('/app')}
+	
+	return (
+		<>
+			<div id="nav">
+			 <img src={icon2} onClick={locate} width="60" />
+			</div>
+		</>
+	);
 }
 
 export default Nav;

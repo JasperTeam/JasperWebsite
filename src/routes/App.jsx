@@ -18,7 +18,7 @@ import axios from 'axios'
     <br/>
     <br/>
     <br/>
-    <div className="radios">
+    {/*<div className="radios">
      {this.data.radio.map((r, i) => {
        return(<>
        <Link to={"/player/" + r.id}>
@@ -27,7 +27,34 @@ import axios from 'axios'
        </>)
      })}
      </div>
-     <p style={{color: "grey", position: "fixed", bottom:"0", textAlign: "center"}}>Click on radio icon to listen.</p>
+     <br/>
+     <br/>*/}
+     <center>
+     <h4>Music</h4>
+     <div className="radios">
+      {this.data.radio.filter(r => r.category === "music").map((r,i)=>{
+        return(<>
+       <Link to={"/player/" + r.id}>
+       <img id="radio" src={r.img} width="100"/>
+       </Link>
+       </>)
+     })}
+     </div>
+     <br/>
+     <h4>News</h4>
+     <div className="radios">
+       {this.data.radio.filter(r => r.category === "news").map((r,i)=>{
+        return(<>
+       <Link to={"/player/" + r.id}>
+       <img id="radio" src={r.img} width="100"/>
+       </Link>
+       </>)
+     })}
+     </div>
+     </center>
+     <center>
+     <p style={{color: "grey", position: "fixed", bottom:"0"}}>Click on radio icon to listen.</p>
+     </center>
     </>
    )
   }

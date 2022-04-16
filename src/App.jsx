@@ -9,7 +9,7 @@ import {
 import Home from './routes/Home';
 import Dashboard from './routes/App';
 import Player from './routes/Player';
-
+import Error from './routes/404';
 function App() {
   const [isLoading, setLoading] = useState(true);
 
@@ -32,12 +32,12 @@ function App() {
   }
   return (
     <>
-    <Nav/>
     <Router>
+		 <Nav/>
      <Switch>
-      <Route path="/" exact element={<Home/>}/>
-      <Route path="/app" element={<Dashboard/>}/>
+      <Route path="/app" exact element={<Dashboard/>}/>
       <Route path="/player/:id" element={<Player/>}/>
+      <Route path="*" element={<Error/>}/>
      </Switch>
     </Router>
     </>

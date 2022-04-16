@@ -17,16 +17,7 @@ function App() {
          <a className="button" href="#learn-more">See more</a>
             </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" view-box="0 0 1920 320" style={{
-      width: '1920px'
-,
-      height: '320px'
-
-      }}
-      >
-            <path fill="#b81898" fillOpacity="1" d="M0 -219L1920 -219L1920 144C1920 144 1712.11 84.8996 1439.75 123.078C1061.55 176.09 969.955 226.612 797.415 208.098C592.308 186.093 552.868 120.368 363.189 49.0614C270.761 14.3134 195.102 5.59145 0 16.0538"/>
-        </svg>
-     </div>
+    </div>
           <div id="learn-more">
         <div className="about">
             <center>

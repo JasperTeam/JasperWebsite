@@ -3,8 +3,22 @@
     {
       "name": "Hits 94",
       "img": "https://cdn-radiotime-logos.tunein.com/s142771q.png",
-      "stream": "http://streaming.live365.com/b14981_128mp3",
-      "id": "94"
+      "stream": "https://streaming.live365.com/b14981_128mp3",
+      "id": "94",
+      "category": "music"
+    },
+    {
+      "name": "Mix FM",
+      "img": "https://cdn-profiles.tunein.com/s86725/images/logoq.png?t=1",
+      "stream": "https://24883.live.streamtheworld.com/MIXFM_SAOPAULO.mp3",
+      "id": "106",
+      "category": "music"
+    }, {
+      "name": "CBN Campinas",
+      "img": "https://cdn-profiles.tunein.com/s8946/images/logoq.jpg?t=156451",
+      "stream": "https://ceb1.live.upx.net.br:8030/stream",
+      "id":"99",
+      "category": "news"
     }
   ]
 }
